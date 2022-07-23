@@ -57,7 +57,7 @@ export default function Regist() {
         ) {
         axios({
             method: 'POST',
-            url: 'some/api',
+            url: 'https://bits-oasis.org/pre-registrations/RocktavesRegistration/',
             data: formInfo
         })
             .then(function (response) {
