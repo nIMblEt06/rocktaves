@@ -2,11 +2,11 @@ import { Box, Text, Heading, Flex } from '@chakra-ui/react'
 import React from 'react'
 
 export default function Timeline() {
-    const length = 3;
-    let index = 1;
-    let counter = 1;
+    
     React.useEffect(() => {
         const container = document.querySelector('.caroCont')
+        let index = 1;
+    let counter = 1;
         const slider = document.getElementsByClassName('imgCont')
         Array.from(slider).forEach(image => {
             image.addEventListener("click", (e) => {
