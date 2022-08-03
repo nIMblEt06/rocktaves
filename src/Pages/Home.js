@@ -16,31 +16,25 @@ export default function Home() {
     const [display, setDisplay] = React.useState(false)
     const [lateral, setLateral] = React.useState(0)
     const [vertical, setVertical] = React.useState(0)
-    React.useEffect(() => {
-        let art = Math.floor(Math.random() * length)
-
-        headings.forEach(heading => {
-        
-
+    headings.forEach(heading => {
+            heading.onmouseover = () => {
+                setDisplay(true)
+                let art = Math.floor(Math.random() * length)
+                setAlbumArt(ImageArray()[art].image)
+            }
             setInterval(() => {
-                heading.onmouseover = () => {
-                    setDisplay(true)
-                    setAlbumArt(ImageArray()[art].image)
-                }
-                heading.onmouseout = () => {
-                    setDisplay(false)
-                }
-            }, 1);
-        })
+            heading.onmouseout = () => {
+                setDisplay(false)
+            }
+        }, 1);
+    })
 
-    });
-
-    React.useEffect(() => {
-        document.addEventListener("mousemove", (element) => {
+    // React.useEffect(() => {
+        display && document.addEventListener("mousemove", (element) => {
             setLateral(element.pageX)
             setVertical(element.pageY)
         })
-    }, [])
+    // }, [])
 
     const navigate = useNavigate()
     function clickRegist() {
@@ -51,7 +45,7 @@ export default function Home() {
     return (
         <Box bgColor="#0a0909" overflowX="hidden">
             <Cursor />
-            <Box id="hoverImage" display={display ? "block" : "none"} left={display && `${lateral - 150}px`} top={display && `${vertical - 150}px`} bg={`url(${albumArt})`} bgPosition={"center"} bgSize="cover" position={"absolute"} w="240px" h="240px"></Box>
+            <Box id="hoverImage" display={display ? "block" : "none"} left={`${lateral - 150}px`} top={`${vertical - 150}px`} bg={`url(${albumArt})`} bgPosition={"center"} bgSize="cover" position={"absolute"} w="240px" h="240px"></Box>
             <Hero
                 clickRegist={clickRegist}
             />
