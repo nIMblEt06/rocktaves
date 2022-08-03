@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-stroke-width: 0px !important;
 }
 .heading:hover{
-  -webkit-text-stroke: black !important;
+  -webkit-text-stroke: white !important;
   -webkit-text-stroke-width: 1px !important;
 }
 

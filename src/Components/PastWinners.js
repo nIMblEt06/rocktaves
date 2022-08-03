@@ -34,7 +34,7 @@ export default function PastWinners() {
         <Box mt="4rem" color="#B9B9B9" pb="2rem" >
             <Box w="90%" marginInline="auto" position={"relative"}>
             <Image className="bgFloat" left="1rem" top="26rem" w="14rem" src = "../Images/bass.png"/>
-                <Heading className='heading' fontSize="6rem">Who Are The <Text display="inline" color="#E042FE">Past Winners?</Text> </Heading>
+                <Heading className='heading' fontSize="6rem"><Text display="inline" color="#E042FE">Past Winners?</Text> </Heading>
             </Box>
             <SimpleGrid mt="4rem" columns={2} columnGap={2} rowGap={4} w="90%" ml={"20rem"} color="white" className="fade">
                  <GridItem colSpan={1}> <Box  border={"3px solid white"} boxShadow="0px 0px 10px white" w="30rem" bg="url('../Images/indianocean.jpg')" bgPos={"center"} bgSize="cover" h="30rem"></Box>

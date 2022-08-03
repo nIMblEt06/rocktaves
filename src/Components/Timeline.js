@@ -40,7 +40,8 @@ export default function Timeline() {
     return (
         <Box mt="4rem" color="#B9B9B9" pb="2rem" overflowX="hidden" >
             <Box w="90%" marginInline="auto" position={"relative"}>
-                <Heading className='heading' fontSize="6rem">What Is The <Text display="inline" color="#E042FE">Timeline?</Text> </Heading>
+            <Image className="bgFloat" left="-3rem" top="10rem" w="25rem" src = "../Images/triangle.png"/>
+                <Heading className='heading' fontSize="6rem"><Text display="inline" color="#E042FE">Timeline</Text> </Heading>
             </Box>
             <Flex className='caroCont' w="300%" ml="30%" flexWrap="no-wrap" mt="4rem">
                 <Box w='60rem' zIndex="3" id="1" className='imgCont' h="20rem" bg="url('../Images/bandPerforming.png')" bgPos="center" bgSize={"cover"}  mr="4rem">
