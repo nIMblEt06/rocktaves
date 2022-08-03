@@ -85,8 +85,8 @@ body::-webkit-scrollbar-thumb {
   animation: float 3s infinite;
 }
 #register:hover{
-  opacity: 1 !important;
   transform: translate(-4px,-4px);
+  opacity: 1 !important;
 }
 
 .heading{

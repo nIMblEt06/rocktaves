@@ -5,7 +5,7 @@ export default function PastWinners() {
 
 
     React.useEffect(() => {
-        const checkpoint = 2900;
+        const checkpoint = 3100;
         let opacity;
         let power = 6;
         const parallax = document.querySelector('.fade')
@@ -33,7 +33,6 @@ export default function PastWinners() {
     return (
         <Box mt="4rem" color="#B9B9B9" pb="2rem" >
             <Box w="90%" marginInline="auto" position={"relative"}>
-            <Image className="bgFloat" left="1rem" top="26rem" w="14rem" src = "../Images/bass.png"/>
                 <Heading className='heading' fontSize="6rem"><Text display="inline" color="#E042FE">Past Winners?</Text> </Heading>
             </Box>
             <SimpleGrid mt="4rem" columns={2} columnGap={2} rowGap={4} w="90%" ml={"20rem"} color="white" className="fade">
