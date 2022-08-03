@@ -34,7 +34,7 @@ export default function Rocktaves() {
                     <Text lineHeight={"3.6rem"}>1.) Bands must submit a link to a 3-5 minute live recording of one their works.</Text>
                     <Text lineHeight={"3.6rem"}>2.) Only original compositions are allowed as submissions.</Text>
                     <Text lineHeight={"3.6rem"}>3.) Bands based in cities where physical preliminary rounds are being hosted are not allowed to register for the online round.</Text>
-                    <Text lineHeight={"3.6rem"}>3.) Separate communication regarding the additional submission for the online round will be relayed to those bands who will participate in the online preliminary round..</Text>
+                    <Text lineHeight={"3.6rem"}>4.) Separate communication regarding the additional submission for the online round will be relayed to those bands who will be participating in the online preliminary round.</Text>
                 </Box>
             </VStack>
         </Box>

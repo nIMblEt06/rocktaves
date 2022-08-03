@@ -58,7 +58,7 @@ export default function Regist() {
         ) {
             axios({
                 method: 'POST',
-                url: 'https://bits-oasis.org/pre-registrations/RocktavesRegistration/',
+                url: 'https://bits-oasis.org/2022/main/preregistrations/RocktavesRegistration/',
                 data: formInfo
             })
                 .then(function (response) {
@@ -101,7 +101,7 @@ export default function Regist() {
                             <option value='mumbai'>MUMBAI</option>
                             <option value='kolkata'>KOLKATA</option>
                             <option value='guwahati'>GUWAHATI</option>
-                            <option value='none'>NONE</option>
+                            <option value='onlline'>ONLINE</option>
                         </Select>
                     </FormControl>
                 </VStack>

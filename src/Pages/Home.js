@@ -1,4 +1,4 @@
-import { Box} from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 import { useNavigate } from "react-router-dom"
 import About from '../Components/About'
@@ -7,33 +7,40 @@ import PastWinners from '../Components/PastWinners'
 import Rocktaves from '../Components/Rocktaves'
 import Timeline from '../Components/Timeline'
 import Cursor from '../Components/Cursor'
-
+import ImageArray from '../Components/ImageArray'
 export default function Home() {
 
-    // const playVideo = Array.from(document.getElementsByClassName('heading'))
-    // const [mouse,setMouse] = React.useState(false)
+    const headings = Array.from(document.getElementsByClassName('heading'))
+    const length = ImageArray().length;
+    const [albumArt, setAlbumArt] = React.useState(ImageArray()[0].image)
+    const [display, setDisplay] = React.useState(false)
+    const [lateral, setLateral] = React.useState(0)
+    const [vertical, setVertical] = React.useState(0)
+    React.useEffect(() => {
+        let art = Math.floor(Math.random() * length)
 
-    // setInterval(() => {
-    //     playVideo.onmouseover = () => { setMouse(true) }
-    //     playVideo.onmouseout = () => {setMouse(false)}
-    // }, 1);
-    
-    // document.addEventListener("mousemove", (element) => {
-    //     let lateral = element.pageX;
-    //     let vertical = element.pageY;
-    
-    //     if (mouse) {
-    //         bgVideo.style.left = lateral - 250 + "px";
-    //         bgVideo.style.top = vertical - 150 + "px";
-    //         bgVideo.style.display = "block";
-    //         playVideo.style.cursor = "default";
-    //     }
-    
-    //     else {
-    //         bgVideo.style.display = "none";
-    //     }
-    // });
-    
+        headings.forEach(heading => {
+        
+
+            setInterval(() => {
+                heading.onmouseover = () => {
+                    setDisplay(true)
+                    setAlbumArt(ImageArray()[art].image)
+                }
+                heading.onmouseout = () => {
+                    setDisplay(false)
+                }
+            }, 1);
+        })
+
+    });
+
+    React.useEffect(() => {
+        document.addEventListener("mousemove", (element) => {
+            setLateral(element.pageX)
+            setVertical(element.pageY)
+        })
+    }, [])
 
     const navigate = useNavigate()
     function clickRegist() {
@@ -43,14 +50,15 @@ export default function Home() {
 
     return (
         <Box bgColor="#0a0909" overflowX="hidden">
-            <Cursor/>
+            <Cursor />
+            <Box id="hoverImage" display={display ? "block" : "none"} left={display && `${lateral - 150}px`} top={display && `${vertical - 150}px`} bg={`url(${albumArt})`} bgPosition={"center"} bgSize="cover" position={"absolute"} w="240px" h="240px"></Box>
             <Hero
-            clickRegist = {clickRegist}
+                clickRegist={clickRegist}
             />
-            <Rocktaves/>
-            <Timeline/>
-            <PastWinners/>
-            <About/>
+            <Rocktaves />
+            <Timeline />
+            <PastWinners />
+            <About />
         </Box>
     )
 }
