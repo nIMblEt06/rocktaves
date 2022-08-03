@@ -16,7 +16,8 @@ export default function Home() {
     const [display, setDisplay] = React.useState(false)
     const [lateral, setLateral] = React.useState(0)
     const [vertical, setVertical] = React.useState(0)
-    headings.forEach(heading => {
+
+        headings.forEach(heading => {
             heading.onmouseover = () => {
                 setDisplay(true)
                 let art = Math.floor(Math.random() * length)
@@ -29,8 +30,9 @@ export default function Home() {
         }, 1);
     })
 
+
     // React.useEffect(() => {
-        display && document.addEventListener("mousemove", (element) => {
+        document.addEventListener("mousemove", (element) => {
             setLateral(element.pageX)
             setVertical(element.pageY)
         })
