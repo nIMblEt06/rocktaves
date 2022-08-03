@@ -10,6 +10,31 @@ import Cursor from '../Components/Cursor'
 
 export default function Home() {
 
+    // const playVideo = Array.from(document.getElementsByClassName('heading'))
+    // const [mouse,setMouse] = React.useState(false)
+
+    // setInterval(() => {
+    //     playVideo.onmouseover = () => { setMouse(true) }
+    //     playVideo.onmouseout = () => {setMouse(false)}
+    // }, 1);
+    
+    // document.addEventListener("mousemove", (element) => {
+    //     let lateral = element.pageX;
+    //     let vertical = element.pageY;
+    
+    //     if (mouse) {
+    //         bgVideo.style.left = lateral - 250 + "px";
+    //         bgVideo.style.top = vertical - 150 + "px";
+    //         bgVideo.style.display = "block";
+    //         playVideo.style.cursor = "default";
+    //     }
+    
+    //     else {
+    //         bgVideo.style.display = "none";
+    //     }
+    // });
+    
+
     const navigate = useNavigate()
     function clickRegist() {
         navigate('/register')
@@ -17,7 +42,7 @@ export default function Home() {
 
 
     return (
-        <Box bgColor="#0a0909">
+        <Box bgColor="#0a0909" overflowX="hidden">
             <Cursor/>
             <Hero
             clickRegist = {clickRegist}
