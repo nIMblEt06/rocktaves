@@ -1,6 +1,5 @@
 import { Box, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
-import Video from "./bgVideo.mp4";
 //E04F2E
 //E042FE
 export default function Hero(props) {
