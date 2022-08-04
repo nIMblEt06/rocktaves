@@ -97,8 +97,14 @@ body::-webkit-scrollbar-thumb {
     font-size: 5.5rem !important;
   }
   #register{
-    font-size: 2rem!important;
+    font-size: 2rem !important;
     padding: 0.5rem 2.5rem !important;
+    
+  }
+  .regist{
+    font-size: 2rem !important;
+    padding: 1rem 2.5rem !important;
+    margin-bottom: 2rem !important;
   }
   .heading{
     font-size: 3rem !important;
@@ -177,6 +183,38 @@ body::-webkit-scrollbar-thumb {
   .icons{
     margin-top: 2rem !important;
     width: 80% !important;
+  }
+  .navbar{
+    margin-inline: 0.5rem !important;
+  
+  }
+  .back{
+    padding: 0.5rem !important;
+  }
+  .subHeadRegist{
+    font-size: 2.2rem !important;
+  }
+  .forms{
+    flex-direction: column;
+  }
+  .bandStack{
+    width: 80% !important;
+    margin-left: 3rem !important;
+    border-right: none !important;
+  }
+  .contactStack{
+    width: 80% !important;
+    margin-left: 3rem !important;
+  }
+  input, select{
+    font-size: 0.9rem !important;
+    width: 100% !important;
+  }
+  .contactLabel{
+    margin-left: 0rem !important;
+  }
+  .chakra-select__wrapper{
+    width: 100% !important;
   }
 }
 

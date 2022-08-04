@@ -4,13 +4,13 @@ export default function Timeline() {
     const [isSmallerThan700] = useMediaQuery('(max-width:700px)')
     
     let index = 1;
-    let counter = 1;
     React.useEffect(() => {
         const container = document.querySelector('.caroCont')
         
         const slider = document.getElementsByClassName('imgCont')
         const cursor = document.querySelector('.cursor')
-        Array.from(slider).forEach(image => {
+       
+         Array.from(slider).forEach(image => {
             image.addEventListener("mouseover",(e) =>{
                 cursor.style.height = `3rem`;
                 cursor.style.width = `3rem`;
@@ -20,16 +20,16 @@ export default function Timeline() {
                 cursor.style.width = `2rem`;
             })
 
-            !isSmallerThan700 && image.addEventListener("click", (e) => {
-                counter = parseInt(e.target.id);
+            image.addEventListener("click", (e) => {
+                let counter = parseInt(e.target.id);
                 if (index < counter) {
-                    container.style.transform = 'translateX(' + -60 * index + 'rem)';
+                    container.style.transform = 'translateX(' + -( isSmallerThan700 ? 0 : 60) * index + 'rem)';
                     container.style.transition = "all 0.5s";
                     slider[counter - 2].style.display = "block";
                     index++;
                 }
                 else if (index > counter) {
-                    container.style.transform = 'translateX(' + -60 * (index - 2) + 'rem)';
+                    container.style.transform = 'translateX(' + -( isSmallerThan700 ? 0 : 60)* (index - 2) + 'rem)';
                     container.style.transition = "all 0.5s";
                     slider[counter].style.display = "block";
                     index--;

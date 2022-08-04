@@ -10,7 +10,6 @@ export default function Hero(props) {
     const [display, setDisplay] = React.useState(false)
     const [lateral, setLateral] = React.useState(0)
     const [vertical, setVertical] = React.useState(0)
-    const name = document.getElementById("name")
 
     React.useEffect(() => {
         const regist = document.querySelector('#register')

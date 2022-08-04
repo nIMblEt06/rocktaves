@@ -7,7 +7,6 @@ import PastWinners from '../Components/PastWinners'
 import Rocktaves from '../Components/Rocktaves'
 import Timeline from '../Components/Timeline'
 import Cursor from '../Components/Cursor'
-import ImageArray from '../Components/ImageArray'
 export default function Home() {
 
     // const headings = Array.from(document.getElementsByClassName('heading'))
