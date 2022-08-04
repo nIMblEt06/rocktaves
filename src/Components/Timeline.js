@@ -1,6 +1,7 @@
-import { Box, Text, Heading, Flex, Image } from '@chakra-ui/react'
+import { Box, Text, Heading, Flex, Image, useMediaQuery } from '@chakra-ui/react'
 import React from 'react'
 export default function Timeline() {
+    const [isSmallerThan700] = useMediaQuery('(max-width:700px)')
     
     let index = 1;
     let counter = 1;
@@ -19,7 +20,7 @@ export default function Timeline() {
                 cursor.style.width = `2rem`;
             })
 
-            image.addEventListener("click", (e) => {
+            !isSmallerThan700 && image.addEventListener("click", (e) => {
                 counter = parseInt(e.target.id);
                 if (index < counter) {
                     container.style.transform = 'translateX(' + -60 * index + 'rem)';
