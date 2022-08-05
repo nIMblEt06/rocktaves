@@ -1,6 +1,6 @@
-import { Box, Flex, Heading, Text, Image } from '@chakra-ui/react'
+import { Box, Flex, Heading, Link, Text, Image } from '@chakra-ui/react'
 import React from 'react'
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
 
 export default function About() {
     return (
@@ -16,9 +16,8 @@ export default function About() {
             <Text className='contacts' fontSize={"2rem"} ml="14rem">Saksham : +91 83068 38151</Text>
                 </Box>
                 <Flex className='icons' justifyContent = "space-between" w = "10%"> 
-                    <FaFacebook fontSize="2rem"/>
-                    <FaInstagram fontSize="2rem"/>
-                    <FaTwitter fontSize="2rem"/>
+                    <Link href="https://www.facebook.com/rocktaves"><FaFacebook fontSize="2rem"/></Link>
+                    <Link href="https://www.instagram.com/rocktaves.bits/" ><FaInstagram fontSize="2rem"/></Link>
                 </Flex>
             </Flex>
         </Box>

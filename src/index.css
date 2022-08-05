@@ -96,6 +96,9 @@ body::-webkit-scrollbar-thumb {
   .glitch{
     font-size: 5.5rem !important;
   }
+  .cursor{
+    display: none;
+  }
   #register{
     font-size: 2rem !important;
     padding: 0.5rem 2.5rem !important;
@@ -216,5 +219,6 @@ body::-webkit-scrollbar-thumb {
   .chakra-select__wrapper{
     width: 100% !important;
   }
+ 
 }
 
