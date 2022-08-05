@@ -54,15 +54,15 @@ export default function Regist() {
             formInfo.phone1 !== null &&
             formInfo.name2 !== "" &&
             formInfo.phone2 !== null &&
-            formInfo.email !== ""
+            formInfo.email_address !== ""
         ) {
             axios({
                 method: 'POST',
-                url: 'https://bits-oasis.org/2022/main/preregistrations/RocktavesRegistration/',
+                url: 'https://bits-oasis.org/2022/main/preregistrations/RoctavesOnlineReg/',
                 data: formInfo
             })
                 .then(function (response) {
-                    alert("Registered Successfully!")
+                    alert(response.data.message)
                     console.log(response);
                 })
                 .catch(function (error) {
