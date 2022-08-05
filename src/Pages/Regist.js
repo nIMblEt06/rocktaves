@@ -122,7 +122,7 @@ export default function Regist() {
                     </FormControl>
                 </VStack>
             </Flex>
-            <Flex justifyContent="center" mt="2rem" w="100vw"><Button className='regist' onClick={handleSubmit} _hover={{ 'bgColor': '#99361F' }} fontFamily="Hermona" color="white" bgColor="#E042FE" padding="2.2rem 3.6rem" fontSize="3rem" fontWeight="400" borderRadius={0}>REGISTER</Button></Flex>
+            <Flex justifyContent="center" mt="2rem" w="100vw"><Button className='regist' onClick={handleSubmit} fontFamily="Hermona" color="white" bgColor="#E042FE" padding="2.2rem 3.6rem" fontSize="3rem" fontWeight="400" borderRadius={0}>REGISTER</Button></Flex>
         </Box >
     )
 }

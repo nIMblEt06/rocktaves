@@ -51,7 +51,7 @@ export default function Hero(props) {
         onMouseMove= {cursorChange} >
              <Box id="hoverImage" display={display ? "block" : "none"} left={`${lateral - 150}px`} top={`${vertical - 150}px`} bg={`url(${albumArt})`} bgPosition={"center"} bgSize="cover" position={"absolute"} w="240px" h="240px" overflowX="hidden"></Box>
             <Box w="90%" marginInline="auto" position={"relative"}>
-                <Heading className='glitch' letterSpacing="0.2rem" fontSize="14rem" pt="11rem" textShadow={"-12px 6px 0px rgba(0, 0, 0, 0.9)"}><Text  display="inline" color="#E042FE">ROCK</Text>TAVES</Heading>
+                <Heading className='glitch' letterSpacing="0.2rem" fontSize="14rem" pt="11rem" textShadow={"-12px 6px 0px rgba(0, 0, 0, 0.9)"}><Text  display="inline" color="#E042FE" className="rock">ROCK</Text>TAVES</Heading>
                 <Box id="register" zIndex="100" cursor="pointer" position={"fixed"} onClick={props.clickRegist} w="fit-content" p="0.2rem 3.5rem" bgColor="#E042FE" boxShadow="6px 7px 2px rgba(0, 0, 0, 0.8)" fontFamily="Hermona" right="4rem" bottom={"6rem"} fontSize="3rem" >REGISTER</Box>
             </Box>
         </Box>

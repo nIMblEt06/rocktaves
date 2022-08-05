@@ -36,7 +36,7 @@ export default function PastWinners() {
             <Box w="90%" marginInline="auto" position={"relative"}>
                 <Heading className='heading' fontSize="6rem"><Text display="inline" color="#E042FE">Past Winners</Text> </Heading>
             </Box>
-            <SimpleGrid mt="4rem" columns={2} columnGap={2} rowGap={4} w="90%" ml={"20rem"} color="white" className="fade">
+            <SimpleGrid mt="4rem" columns={2} columnGap={2} rowGap={4} w="90%" ml={"12%"} color="white" className="fade">
                  <GridItem   colSpan={1}> <Box  className='bandImage'  border={"3px solid white"} boxShadow="0px 0px 10px white" w="30rem" bg="url('../Images/indianocean.jpg')" bgPos={"center"} bgSize="cover" h="30rem"></Box>
                  <Box fontFamily={"Hermona"} fontSize={"3rem"}  className="bandText" textAlign="left">Indian Ocean</Box></GridItem>
                  <GridItem   colSpan={1}> <Box  className='bandImage'  border={"3px solid white"} boxShadow="0px 0px 10px white" w="30rem" bg="url('../Images/parikrama.jpg')" bgPos={"center"} bgSize="cover" h="30rem"></Box>

@@ -46,6 +46,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 30;
   transition: width 0.7s;
   transition: height 0.7s;
+  /* transition: background-color 0.7s; */
   transition: transform 0.001s;
 }
 
@@ -56,6 +57,9 @@ body::-webkit-scrollbar-thumb {
 .imgCont:hover~.cursor{
   height: 4rem;
   width: 4rem;
+}
+.rock:hover~.cursor{
+  background-color: #F5F5F5;
 }
 
 .caroCont{
@@ -88,6 +92,14 @@ body::-webkit-scrollbar-thumb {
 #register:hover{
   transform: translate(-4px,-4px);
   opacity: 1 !important;
+  color: #E042FE !important;
+  background-color: #F5F5F5 !important;
+}
+.regist:hover{
+  transform: translate(-4px,-4px);
+  opacity: 1 !important;
+  color: #E042FE !important;
+  background-color: #F5F5F5 !important;
 }
 
 .heading{
