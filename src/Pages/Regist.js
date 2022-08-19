@@ -21,7 +21,7 @@ export default function Regist() {
         city: "",
         travelling_capacity: "",
         name1: "",
-        phone1: null,
+        phone: null,
         name2: "",
         phone2: null,
         name3: "",
