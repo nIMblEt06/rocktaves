@@ -25,7 +25,7 @@ export default function Regist() {
         name2: "",
         phone2: null,
         name3: "",
-        phone3: null,
+        phone3: "",
         email_address: "",
         social_link: ""
     })
@@ -56,9 +56,11 @@ export default function Regist() {
             formInfo.phone2 !== null &&
             formInfo.email_address !== ""
         ) {
+            
             axios({
                 method: 'POST',
                 url: 'https://bits-oasis.org/2022/main/preregistrations/RoctavesOnlineReg/',
+                // url: 'some/api',
                 data: formInfo
             })
                 .then(function (response) {
