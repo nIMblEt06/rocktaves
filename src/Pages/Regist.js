@@ -21,9 +21,9 @@ export default function Regist() {
         city: "",
         travelling_capacity: "",
         name1: "",
-        phone: null,
+        phone: "",
         name2: "",
-        phone2: null,
+        phone2: "",
         name3: "",
         phone3: "",
         email_address: "",
@@ -51,9 +51,9 @@ export default function Regist() {
             formInfo.travelling_capacity !== "" &&
             // organisation != "" &&
             formInfo.name1 !== "" &&
-            formInfo.phone1 !== null &&
+            formInfo.phone !== "" &&
             formInfo.name2 !== "" &&
-            formInfo.phone2 !== null &&
+            formInfo.phone2 !== "" &&
             formInfo.email_address !== ""
         ) {
             
@@ -112,7 +112,7 @@ export default function Regist() {
                     <FormControl>
                         <Text className='contactLabel' fontSize="1.2rem" ml="-3rem" color="#E042FE">CONTACT 1:</Text>
                         <Input borderRadius="0" mt="0.5rem" required color="#B9B9B9 !important" bgColor="#181818" id="name1" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="NAME OF CONTACT" name="name1" type="text" value={formInfo.name1} />
-                        <Input borderRadius="0" mt="0.5rem" required color="#B9B9B9 !important" bgColor="#181818" id="phone1" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="PHONE NUMBER" name="phone1" type="number" value={formInfo.phone1} />
+                        <Input borderRadius="0" mt="0.5rem" required color="#B9B9B9 !important" bgColor="#181818" id="phone" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="PHONE NUMBER" name="phone" type="number" value={formInfo.phone} />
                         <Text className='contactLabel' mt="2rem" fontSize="1.2rem" ml="-3rem" color="#E042FE">CONTACT 2:</Text>
                         <Input borderRadius="0" mt="0.5rem" required color="#B9B9B9 !important" bgColor="#181818" id="name2" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="NAME OF CONTACT" name="name2" type="text" value={formInfo.name2} />
                         <Input borderRadius="0" mt="0.5rem" required color="#B9B9B9 !important" bgColor="#181818" id="phone2" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="PHONE NUMBER" name="phone2" type="number" value={formInfo.phone2} />
