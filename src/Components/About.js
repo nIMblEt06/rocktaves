@@ -12,8 +12,8 @@ export default function About() {
             <Heading className='subHeadAbout' fontSize="4rem" ml="8rem" mt="4rem"><Text display="inline" color="#E042FE">Connect </Text>With Us </Heading>
             <Flex className='footer' justifyContent="space-between" alignItems="flex-end">
                 <Box>
-                <Text className='contacts' mt="3rem" fontSize={"2rem"} ml="14rem">Mizaan : +91 98211 31821</Text>
-            <Text className='contacts' fontSize={"2rem"} ml="14rem">Saksham : +91 83068 38151</Text>
+                <Text className='contacts' mt="3rem" fontSize={"2rem"} ml="14rem">Ananth : +91 81228 76163</Text>
+            <Text className='contacts' fontSize={"2rem"} ml="14rem">Saksham : +91 98291 64499</Text>
                 </Box>
                 <Flex className='icons' justifyContent = "space-between" w = "10%"> 
                     <Link href="https://www.facebook.com/rocktaves"><FaFacebook fontSize="2rem"/></Link>
