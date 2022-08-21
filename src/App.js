@@ -5,10 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/rocktaves'>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Regist />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
+        <Route path={`${process.env.PUBLIC_URL}/register`} element={<Regist />} />
       </Routes>
     </BrowserRouter>
   );
