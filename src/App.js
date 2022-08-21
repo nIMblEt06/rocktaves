@@ -7,8 +7,8 @@ function App() {
   return (
     <BrowserRouter basename='/rocktaves'>
       <Routes>
-        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
-        <Route path={`${process.env.PUBLIC_URL}/register`} element={<Regist />} />
+        <Route path={`/`} element={<Home />} />
+        <Route path={`/register`} element={<Regist />} />
       </Routes>
     </BrowserRouter>
   );
