@@ -16,9 +16,9 @@ export default function About() {
                         <Text className='contacts' fontSize={"2rem"} ml="14rem">Aryajeet : +91 98291 64499</Text>
                     </Box>
                     <Flex className='icons' justifyContent="space-between" w="10%">
-                        <Link href="https://www.facebook.com/rocktaves"><FaFacebook fontSize="2rem" /></Link>
-                        <Link href="https://open.spotify.com/user/31n22nt6v5hkfl4rytgxwjg7xbhq?si=aXyid_92R9SggJ1trRX9gg&utm_source=whatsapp"><FaSpotify fontSize="2rem" /></Link>
-                        <Link href="https://www.instagram.com/rocktaves.bits/" ><FaInstagram fontSize="2rem" /></Link>
+                        <Link target="_blank" href="https://www.facebook.com/rocktaves"><FaFacebook fontSize="2rem" /></Link>
+                        <Link target="_blank" href="https://open.spotify.com/user/31n22nt6v5hkfl4rytgxwjg7xbhq?si=aXyid_92R9SggJ1trRX9gg&utm_source=whatsapp"><FaSpotify fontSize="2rem" /></Link>
+                        <Link target="_blank" href="https://www.instagram.com/rocktaves.bits/" ><FaInstagram fontSize="2rem" /></Link>
                     </Flex>
                 </Flex>
             </Box>
