@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaSpotify } from 'react-icons/fa'
 export default function About() {
     return (
         <Box borderBottom="3px solid #76877D " mt="6rem" position={"relative"}>
-            <Image className="bgFloat" right="4rem" top="6rem" w="25rem" src="../Images/guy.png" />
+            <Image className="bgFloat" right="4rem" top="6rem" w="25rem" src="./Images/guy.png" />
             <Box w="90%" marginInline="auto" mt="4rem" color="#B9B9B9" pb="3rem" >
                 <Heading className='heading' fontSize="6rem"><Text display="inline" color="#E042FE">About Us</Text> </Heading>
                 <Text className='textAbout' lineHeight={"2.6rem"} fontSize={"1.4rem"} ml="10rem" w="60%">Rocktaves is organised by The Association Of Rock, BITS Pilani (ARBITS). We are a group dedicated to fostering the growth of the Indian music scene amongst our students and we aspire to uplift it in  any way possible. ARBITS began as a club with the initial purpose being to organize and conduct Rocktaves, the oldest semi-professional electro-band competition in India, and Rocktaves has been a great launch pad for budding talent in the past, with winners receiving cash prizes upwards of a lakh and a half. This year, we plan to return with better prizes and a better Rocktaves experience for every party involved. Stay Tuned!</Text>

@@ -42,17 +42,17 @@ export default function Timeline() {
     return (
         <Box mt="4rem" color="#B9B9B9" pb="2rem" overflowX="hidden" >
             <Box w="90%" marginInline="auto" position={"relative"}>
-            <Image className="bgFloat" left="-3rem" top="10rem" w="25rem" src = "../Images/triangle.png"/>
+            <Image className="bgFloat" left="-3rem" top="10rem" w="25rem" src = "./Images/triangle.png"/>
                 <Heading className='heading' fontSize="6rem"><Text display="inline" color="#E042FE">Timeline</Text> </Heading>
             </Box>
             <Flex className='caroCont' w="300%" ml="30%" flexWrap="no-wrap" mt="4rem">
-                <Box w='50rem' zIndex="3" id="1" className='imgCont' h="19rem" bg="url('../Images/bandPerforming.png')" bgPos="center" bgSize={"cover"}  mr="4rem">
+                <Box w='50rem' zIndex="3" id="1" className='imgCont' h="19rem" bg="url('./Images/bandPerforming.png')" bgPos="center" bgSize={"cover"}  mr="4rem">
                     
                 </Box>
-                <Box w='50rem' zIndex="3" id="2" className='imgCont' h="19rem" bg="url('../Images/bandPerforming2.png')" bgPos="center"  bgSize={"cover"} mr="4rem">
+                <Box w='50rem' zIndex="3" id="2" className='imgCont' h="19rem" bg="url('./Images/bandPerforming2.png')" bgPos="center"  bgSize={"cover"} mr="4rem">
                
                 </Box>
-                <Box w='50rem' zIndex="3" id="3" className='imgCont' h="19rem" bg="url('../Images/bandPerforming3.png')" bgPos="center" bgSize={"cover"} >
+                <Box w='50rem' zIndex="3" id="3" className='imgCont' h="19rem" bg="url('./Images/bandPerforming3.png')" bgPos="center" bgSize={"cover"} >
                 
                 </Box>
             </Flex>
