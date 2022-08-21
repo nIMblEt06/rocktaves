@@ -77,7 +77,7 @@ export default function Regist() {
         }
     }
     return (
-        <Box bg="url(../Images/registBg.jpg)" bgPosition="center" bgSize="cover" bgColor="#0a0909" minHeight="100vh" w="100vw">
+        <Box bg="url(./Images/registBg.jpg)" bgPosition="center" bgSize="cover" bgColor="#0a0909" minHeight="100vh" w="100vw">
             <Cursor/>
             <Flex className='navbar' marginInline="6rem" justifyContent="space-between" alignItems="center">
                 <Box className='back' _hover={{ 'bgColor': '#E001FE' }} transition="0.3s all" cursor="pointer" onClick={clickBack} transform="translateY(10px)" p="0.6rem 1rem" color="#B9B9B9" bgColor="#E042FE"><ArrowBackIcon w="1.6rem" h="1.6rem" /></Box>
