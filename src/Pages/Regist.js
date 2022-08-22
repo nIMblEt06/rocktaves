@@ -102,7 +102,7 @@ export default function Regist() {
                             <option value='chennai'>CHENNAI</option>
                             <option value='mumbai'>MUMBAI</option>
                             <option value='kolkata'>KOLKATA</option>
-                            <option value='guwahati'>GUWAHATI</option>
+                            {/* <option value='guwahati'>GUWAHATI</option> */}
                             <option value='onlline'>ONLINE</option>
                         </Select>
                     </FormControl>
