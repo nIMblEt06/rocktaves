@@ -16,7 +16,7 @@ export default function Regist() {
     const [formInfo, setFormInfo] = React.useState({
         name: "",
         number_of_members: null,
-        released_work: "",
+        // released_work: "",
         music_since: null,
         city: "",
         travelling_capacity: "",
@@ -45,7 +45,7 @@ export default function Regist() {
         if (
             formInfo.name !== "" &&
             formInfo.number_of_members !== null &&
-            formInfo.released_work !== "" &&
+            // formInfo.released_work !== "" &&
             formInfo.music_since !== null &&
             formInfo.city !== "" &&
             formInfo.travelling_capacity !== "" &&
@@ -93,7 +93,7 @@ export default function Regist() {
                     <FormControl>
                         <Input borderRadius="0" mt="2rem" required color="#B9B9B9 !important" bgColor="#181818" id="name" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="BAND NAME" name="name" type="text" value={formInfo.name} />
                         <Input borderRadius="0" mt="3rem" required color="#B9B9B9 !important" bgColor="#181818" id="number_of_members" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="NUMBER OF MEMBERS" name="number_of_members" type="number" value={formInfo.number_of_members} />
-                        <Input borderRadius="0" mt="3rem" required color="#B9B9B9 !important" bgColor="#181818" id="released_work" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="DRIVE/SPOTIFY LINK OF MUSIC CREATED" name="released_work" type="url" value={formInfo.released_work} />
+                        {/* <Input borderRadius="0" mt="3rem" required color="#B9B9B9 !important" bgColor="#181818" id="released_work" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="DRIVE/SPOTIFY LINK OF MUSIC CREATED" name="released_work" type="url" value={formInfo.released_work} /> */}
                         <Input borderRadius="0" mt="3rem" required color="#B9B9B9 !important" bgColor="#181818" id="name" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="YEAR OF INCEPTION OF BAND" name="music_since" type="number" value={formInfo.music_since} />
                         <Input borderRadius="0" mt="3rem" required color="#B9B9B9 !important" bgColor="#181818" id="city" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="CITY YOU ARE BASED IN" name="city" type="text" value={formInfo.city} />
                         <Select borderRadius="0" mt="3rem" required color="#B9B9B9 !important" bgColor="#181818" id="travelling_capacity" border="1px solid #575757 !important" onChange={handleChange} className="selectCont" w="90%" placeholder="VENUE YOU CAN CONTEST IN" name="travelling_capacity" value={formInfo.travelling_capacity} mb="2rem">
@@ -120,7 +120,7 @@ export default function Regist() {
                         <Input borderRadius="0" mt="0.5rem" color="#B9B9B9 !important" bgColor="#181818" id="name3" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="NAME OF CONTACT" name="name3" type="text" value={formInfo.name3} />
                         <Input borderRadius="0" mt="0.5rem" color="#B9B9B9 !important" bgColor="#181818" id="phone3" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="PHONE NUMBER" name="phone3" type="number" value={formInfo.phone3} />
                         <Input borderRadius="0" mt="2rem" color="#B9B9B9 !important" bgColor="#181818" id="email_address" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="YOUR EMAIL ADDRESS" name="email_address" type="email" value={formInfo.email_address} />
-                        <Input borderRadius="0" mt="0.5rem" color="#B9B9B9 !important" bgColor="#181818" id="social_link" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="LINK TO SOCIAL MEDIA ACCOUNT (IF ANY)" name="social_link" type="url" value={formInfo.social_link} />
+                        {/* <Input borderRadius="0" mt="0.5rem" color="#B9B9B9 !important" bgColor="#181818" id="social_link" border="1px solid #575757 !important" onChange={handleChange} p="1.2rem" w="90%" placeholder="LINK TO SOCIAL MEDIA ACCOUNT (IF ANY)" name="social_link" type="url" value={formInfo.social_link} /> */}
                     </FormControl>
                 </VStack>
             </Flex>
