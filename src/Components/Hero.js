@@ -1,10 +1,10 @@
-import { Box, Heading, Text } from '@chakra-ui/react'
+import { Box, Heading, Text, useMediaQuery } from '@chakra-ui/react'
 import React from 'react'
 import ImageArray from '../Components/ImageArray'
 //E04F2E
 //E042FE
 export default function Hero(props) {
-
+    const [isSmallerThan800] = useMediaQuery('(max-width:800px)')
     const length = ImageArray().length;
     const [albumArt, setAlbumArt] = React.useState(ImageArray()[0].image)
     const [display, setDisplay] = React.useState(false)
@@ -31,7 +31,7 @@ export default function Hero(props) {
     // }, [])
 
     function displayImage(){
-        setDisplay(true)
+        (isSmallerThan800 ? " " : setDisplay(true))
         let art = Math.floor(Math.random() * length)
         setAlbumArt(ImageArray()[art].image)
     }
@@ -43,6 +43,7 @@ export default function Hero(props) {
          bg="url('./Images/bgImage.jpg')" 
          bgPos={"center"} 
          bgSize="cover" 
+         position="relative"
          overflowX="hidden"
          color={"white"}
           h="100vh" 
